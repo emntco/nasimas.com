@@ -15,6 +15,10 @@ Thumbs.db
 # Project
 .env
 
+# Composer
+vendor
+composer.*
+
 # Core
 /*
 !.gitignore
@@ -22,16 +26,15 @@ Thumbs.db
 
 # Content
 wp-content/*
-!wp-content/mu-plugins/
+!wp-content/plugins/
 !wp-content/themes/
+!wp-content/mu-plugins/
+
+# Plugins
+wp-content/plugins/*
+!wp-content/plugins/sentry/
+!wp-content/plugins/sentry/sentry.php
 
 # Themes
 wp-content/themes/*
 !wp-content/themes/salient-child/
-
-# Plugins
-wp-content/mu-plugins/*
-!wp-content/mu-plugins/fix-smartcrawl-advancedtools.php
-
-# Configurations
-wp-config.php
